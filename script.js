@@ -67,9 +67,9 @@ function clearBoard() {
 }
 
 function generateCards() {
-  var gameBoard = game.gameBoard;
-  var cardSize = game.level * 2;
-  var cardTotal = cardSize * cardSize;
+  const gameBoard = game.gameBoard;
+  const cardSize = game.level * 2;
+  const cardTotal = cardSize * cardSize;
   game.cardTotal = cardTotal;
   const cards = [];
   gameBoard.style["grid-template-columns"] = `repeat(${cardSize}, 1fr)`;
